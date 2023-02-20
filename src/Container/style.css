@@ -1,0 +1,9 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 21px;
+    background-image: url(../Images/atmMachine.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+}
