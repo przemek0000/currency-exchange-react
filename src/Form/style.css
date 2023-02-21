@@ -27,18 +27,6 @@
     background-color: rgba(0, 126, 0, 0.301);
 }
 
-.form__result {
-    text-align: center;
-    margin: 0px;
-    padding-top: 90px;
-    padding-bottom: 280px;
-    color: rgb(0, 22, 219);
-    background-image: url(../Images/atmMachine.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: white;
-}
-
 .form__title {
     margin: 0px;
     border: 4px solid rgb(0, 155, 108);

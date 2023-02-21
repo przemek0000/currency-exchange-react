@@ -1,0 +1,18 @@
+.result {
+    text-align: center;
+    margin: 0px;
+    padding-top: 90px;
+    padding-bottom: 280px;
+    color: rgb(0, 22, 219);
+    background-image: url(./Images/atmMachine.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.resultArea {
+    resize: none;
+    text-align: center;
+    background: transparent;
+    border: none;
+}

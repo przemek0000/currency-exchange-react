@@ -1,7 +1,7 @@
 import "./style.css"
 import { useState } from "react";
 
-const Form = () => {
+const Form = ({ calculateResult }) => {
     const min = 0;
 
     const [money, setMoney] = useState('');
@@ -15,6 +15,7 @@ const Form = () => {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
+        calculateResult(money, currency);
     }
 
     return (
@@ -56,9 +57,6 @@ const Form = () => {
                 <p>
                     <button className="form__button" name="button">Przelicz</button>
                 </p>
-                <div className="form__result">
-                    <strong className="form__textResult">N/A</strong>
-                </div>
             </fieldset>
         </form>
     )
