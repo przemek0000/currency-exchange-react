@@ -2,6 +2,8 @@
 
 - [Simple currency exchange](#simple-currency-exchange)
   - [Demo](#demo)
+  - [Introduction](#introduction)
+  - [Technology used](#technology-used)
   - [Available Scripts](#available-scripts)
     - [`npm start`](#npm-start)
     - [`npm run build`](#npm-run-build)
@@ -12,6 +14,20 @@
 ## Demo
 
 [Website](https://przemek0000.github.io/Module-9/)
+
+## Introduction
+![Introduction](src/atmMachine.png)
+
+Simple currency exchange was created to exchange PLN to foreign currencies (EUR, GBP, USD). To calculate it was used strict pattern based on value from 21.02.2023.
+
+## Technology used
+
+- HTML
+- CSS
+- JAVASCRIPT ES6+
+- BEM CONVENTION
+- REACT.JS
+- JSX
 
 ## Available Scripts
 
