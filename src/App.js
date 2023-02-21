@@ -5,7 +5,7 @@ import Form from "./Form";
 import { useState } from "react";
 
 function App() {
-  const [result, setResult] = useState("N/A")
+  const [result, setResult] = useState("💰")
 
   const changeMoney = (money, currency) => {
     switch (currency) {
@@ -33,7 +33,6 @@ function App() {
           disabled
           cols={16}
           rows={2}
-          maxLength="2"
           value={result}
           onChange={(event) => setResult(event.target.value)}
         />
