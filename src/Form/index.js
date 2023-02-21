@@ -4,18 +4,18 @@ import { useState } from "react";
 const Form = ({ calculateResult }) => {
     const min = 0;
 
-    const [money, setMoney] = useState('');
+    const [value, setValue] = useState('');
     const [currency, setCurrency] = useState("EUR");
 
     const setMinNumber = ({ target }) => {
-        const money = Math.max(min, Number(target.value))
+        const value = Math.max(min, Number(target.value))
 
-        setMoney(money);
+        setValue(value);
     }
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        calculateResult(money, currency);
+        calculateResult(value, currency);
     }
 
     return (
@@ -45,7 +45,7 @@ const Form = ({ calculateResult }) => {
                         </span>
                         <input className="form__value"
                             name="input"
-                            value={money}
+                            value={value}
                             onChange={setMinNumber}
                             type="number"
                             min="0"

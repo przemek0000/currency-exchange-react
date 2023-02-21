@@ -7,21 +7,21 @@ import { useState } from "react";
 function App() {
   const [result, setResult] = useState("💰")
 
-  const changeMoney = (money, currency) => {
+  const changeMoney = (value, currency) => {
     switch (currency) {
       case "EUR":
-        return (money * 0.21).toFixed(2) + ` ${currency}`;
+        return (value * 0.21).toFixed(2) + ` ${currency}`;
       case "GBP":
-        return (money * 0.19).toFixed(2) + ` ${currency}`;
+        return (value * 0.19).toFixed(2) + ` ${currency}`;
       case "USD":
-        return (money * 0.23).toFixed(2) + ` ${currency}`;
+        return (value * 0.23).toFixed(2) + ` ${currency}`;
       default:
         return;
     }
   }
 
-  const calculateResult = (money, currency) => (
-    setResult(changeMoney(money, currency))
+  const calculateResult = (value, currency) => (
+    setResult(changeMoney(value, currency))
   )
 
   return (
