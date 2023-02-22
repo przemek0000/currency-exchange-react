@@ -6,7 +6,7 @@ import worldCurrencies from "./worldCurrencies";
 import { useState } from "react";
 
 function App() {
-  const [result, setResult] = useState("💰")
+  const [result, setResult] = useState("$$$")
 
   const changeMoney = (value, currency) => {
     return (
