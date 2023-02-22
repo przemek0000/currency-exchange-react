@@ -10,7 +10,7 @@ function App() {
 
   const changeMoney = (value, currency) => {
     return (
-      (value * (worldCurrencies.find(({ value }) => value === currency).rate)).toFixed(2)
+      ((value * (worldCurrencies.find(({ value }) => value === currency).rate)).toFixed(2)) + ` ${currency}`
     )
   }
 
