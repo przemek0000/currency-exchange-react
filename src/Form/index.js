@@ -1,6 +1,6 @@
 import "./style.css"
 import { useState } from "react";
-import { worldCurrencies } from "../worldCurrencies";
+import worldCurrencies from "../worldCurrencies";
 
 const Form = ({ calculateResult }) => {
     const min = 0;

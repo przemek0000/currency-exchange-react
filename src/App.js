@@ -2,22 +2,16 @@ import "./App.css";
 import Container from "./Container"
 import Header from "./Header";
 import Form from "./Form";
+import worldCurrencies from "./worldCurrencies";
 import { useState } from "react";
 
 function App() {
   const [result, setResult] = useState("💰")
 
   const changeMoney = (value, currency) => {
-    switch (currency) {
-      case "EUR":
-        return (value * 0.21).toFixed(2) + ` ${currency}`;
-      case "GBP":
-        return (value * 0.19).toFixed(2) + ` ${currency}`;
-      case "USD":
-        return (value * 0.23).toFixed(2) + ` ${currency}`;
-      default:
-        return;
-    }
+    return (
+      (value * (worldCurrencies.find(({ value }) => value === currency).rate)).toFixed(2)
+    )
   }
 
   const calculateResult = (value, currency) => (
