@@ -18,6 +18,12 @@ const Form = ({ calculateResult }) => {
         calculateResult(value, currency);
     }
 
+    const worldCurrencies = [
+        { value: "EUR", label: "EUR", rate: 0.21 },
+        { value: "GBP", label: "GBP", rate: 0.19 },
+        { value: "USD", label: "USD", rate: 0.23 }
+    ]
+
     return (
         <form onSubmit={onFormSubmit}>
             <fieldset className="form__fieldset">
@@ -29,12 +35,10 @@ const Form = ({ calculateResult }) => {
                         <span className="form__label">
                             Wybierz walute:
                         </span>
-                        <select className="form__select"
-                            value={currency}
-                            onChange={({ target }) => setCurrency(target.value)}>
-                            <option>EUR</option>
-                            <option>GBP</option>
-                            <option>USD</option>
+                        <select className="form__select" value={currency} onChange={({ target }) => setCurrency(target.value)}>
+                            {worldCurrencies.map(worldCurrencie => (
+                                <option key={worldCurrencie.value} value={worldCurrencie.value} >{worldCurrencie.label}</option>
+                            ))}
                         </select>
                     </label>
                 </p>
