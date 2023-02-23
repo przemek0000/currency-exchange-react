@@ -11,12 +11,14 @@
 
 .form__select {
     width: 300px;
+    padding: 2px;
     border-radius: 10px;
 }
 
 .form__value {
     width: 300px;
     border-radius: 10px;
+    padding: 2px;
 }
 
 .form__button {
