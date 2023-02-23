@@ -8,7 +8,7 @@ const Form = ({ calculateResult }) => {
     const [value, setValue] = useState('');
     const [currency, setCurrency] = useState(worldCurrencies[0].label);
 
-    const setMinNumber = ({ target }) => {
+    const setMinCurrency = ({ target }) => {
         const value = Math.max(min, Number(target.value))
 
         setValue(value);
@@ -50,7 +50,7 @@ const Form = ({ calculateResult }) => {
                         <input className="form__value"
                             name="input"
                             value={value}
-                            onChange={setMinNumber}
+                            onChange={setMinCurrency}
                             type="number"
                             min="0"
                             step="any"
