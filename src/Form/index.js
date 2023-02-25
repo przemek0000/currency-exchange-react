@@ -1,6 +1,7 @@
 import "./style.css"
 import { useState } from "react";
 import worldCurrencies from "../worldCurrencies";
+import FullDate from "./FullDate";
 
 const Form = ({ calculateResult }) => {
     const min = 0;
@@ -25,6 +26,7 @@ const Form = ({ calculateResult }) => {
                 <legend className="form__title">
                     PLN
                 </legend>
+                <FullDate />
                 <p>
                     <label>
                         <span className="form__label">

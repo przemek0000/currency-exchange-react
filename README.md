@@ -10,15 +10,16 @@
     - [`npm run eject`](#npm-run-eject)
     - [`npm run deploy`](#npm-run-deploy)
 
-
 ## Demo
 
 [Website](https://przemek0000.github.io/Module-10b/)
 
 ## Introduction
+
 ![Introduction](src/atmMachine.png)
 
-Simple currency exchange was created to exchange PLN to foreign currencies (EUR, GBP, USD). To calculate it was used strict pattern based on value from 21.02.2023.
+Simple currency exchange was created to exchange PLN to foreign currencies (EUR, GBP, USD). To calculate it, was used strict pattern based on value from 21.02.2023. This version
+allow store tasks in memory.
 
 ## Technology used
 
