@@ -1,6 +1,6 @@
-# Simple currency exchange
+# Simple currency exchange version 1.1
 
-- [Simple currency exchange](#simple-currency-exchange)
+- [Simple currency exchange version 1.1](#simple-currency-exchange-version-11)
   - [Demo](#demo)
   - [Introduction](#introduction)
   - [Technology used](#technology-used)
@@ -13,7 +13,7 @@
 
 ## Demo
 
-[Website](https://przemek0000.github.io/Module-9/)
+[Website](https://przemek0000.github.io/Module-10b/)
 
 ## Introduction
 ![Introduction](src/atmMachine.png)
