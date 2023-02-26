@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./style.css"
+import "./style.css";
 
 const dateOptions = {
     weekday: "long",
@@ -7,14 +7,18 @@ const dateOptions = {
     day: "numeric",
 };
 
+const timeOptions = {
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric"
+};
+
 const FullDate = () => {
-    const [date, setDate] = useState(new Date().toLocaleDateString(undefined, dateOptions));
-    const [time, setTime] = useState(new Date().toLocaleTimeString())
+    const [date, setDate] = useState(new Date());
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setDate(date => date = new Date().toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" }));
-            setTime(time => time = new Date().toLocaleTimeString());
+            setDate(date => date = new Date());
         }, 1000)
 
         return () => {
@@ -24,7 +28,11 @@ const FullDate = () => {
 
     return (
         < p className="date" >
-            Dzisiaj jest {date}, {time}
+            Dzisiaj jest
+            {" "}
+            {date.toLocaleDateString(undefined, dateOptions)}
+            {", "}
+            {date.toLocaleTimeString(undefined, timeOptions)}
         </p >
     )
 }
