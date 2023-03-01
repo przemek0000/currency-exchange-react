@@ -31,6 +31,7 @@ const FullDate = () => {
             Dzisiaj jest
             {" "}
             {date.toLocaleDateString(undefined, dateOptions)}
+            {" "}
             {date.toLocaleTimeString(undefined, timeOptions)}
         </StyledDate>
     )
