@@ -13,7 +13,7 @@ const timeOptions = {
     second: "numeric"
 };
 
-const FullDate = () => {
+const Clock = () => {
     const [date, setDate] = useState(new Date());
 
     useEffect(() => {
@@ -37,4 +37,4 @@ const FullDate = () => {
     )
 }
 
-export default FullDate;
+export default Clock;
