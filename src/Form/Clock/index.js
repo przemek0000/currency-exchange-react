@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 import { StyledDate } from "./styled";
+import useCurrentDate from "./useCurrentDate";
 
 const dateOptions = {
     weekday: "long",
@@ -14,17 +14,7 @@ const timeOptions = {
 };
 
 const Clock = () => {
-    const [date, setDate] = useState(new Date());
-
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setDate(date => date = new Date());
-        }, 1000)
-
-        return () => {
-            clearInterval(intervalId);
-        }
-    }, [])
+    const date = useCurrentDate();
 
     return (
         <StyledDate>
