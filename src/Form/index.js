@@ -1,7 +1,7 @@
-import "./style.css"
 import { useState } from "react";
 import worldCurrencies from "../worldCurrencies";
 import FullDate from "./FullDate";
+import { StyledFieldset, StyledSpan, StyledSelect, StyledInput, StyledButton, StyledLegend } from "./styled";
 
 const Form = ({ calculateResult }) => {
     const min = 0;
@@ -22,17 +22,17 @@ const Form = ({ calculateResult }) => {
 
     return (
         <form onSubmit={onFormSubmit}>
-            <fieldset className="form__fieldset">
-                <legend className="form__title">
+            <StyledFieldset>
+                <StyledLegend>
                     PLN
-                </legend>
+                </StyledLegend>
                 <FullDate />
                 <p>
                     <label>
-                        <span className="form__label">
+                        <StyledSpan>
                             Wybierz walute:
-                        </span>
-                        <select className="form__select"
+                        </StyledSpan>
+                        <StyledSelect
                             value={currency}
                             onChange={({ target }) => setCurrency(target.value)}>
                             {worldCurrencies.map(worldCurrencie => (
@@ -41,15 +41,15 @@ const Form = ({ calculateResult }) => {
                                     value={worldCurrencie.value}>
                                     {worldCurrencie.label}
                                 </option>))}
-                        </select>
+                        </StyledSelect>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <span className="form__label">
+                        <StyledSpan>
                             Wprowadź wartość:
-                        </span>
-                        <input className="form__value"
+                        </StyledSpan>
+                        <StyledInput
                             name="input"
                             value={value}
                             onChange={setMinCurrency}
@@ -61,9 +61,9 @@ const Form = ({ calculateResult }) => {
                     </label>
                 </p>
                 <p>
-                    <button className="form__button" name="button">Przelicz</button>
+                    <StyledButton name="button">Przelicz</StyledButton>
                 </p>
-            </fieldset>
+            </StyledFieldset>
         </form>
     )
 }

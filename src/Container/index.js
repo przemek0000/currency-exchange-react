@@ -1,10 +1,10 @@
-import "./style.css";
+import { StyledContainer } from "./styled"
 
 const Container = ({ children }) => {
     return (
-        <div className="container">
+        <StyledContainer>
             {children}
-        </div>
+        </StyledContainer>
     )
 }
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./style.css";
+import { StyledDate } from "./styled";
 
 const dateOptions = {
     weekday: "long",
@@ -27,12 +27,12 @@ const FullDate = () => {
     }, [])
 
     return (
-        < p className="date" >
+        <StyledDate>
             Dzisiaj jest
             {" "}
             {date.toLocaleDateString(undefined, dateOptions)}
             {date.toLocaleTimeString(undefined, timeOptions)}
-        </p >
+        </StyledDate>
     )
 }
 
