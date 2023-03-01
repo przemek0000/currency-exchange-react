@@ -1,6 +1,6 @@
 import { useState } from "react";
 import worldCurrencies from "../worldCurrencies";
-import FullDate from "./FullDate";
+import Clock from "./Clock";
 import { StyledFieldset, StyledSpan, StyledSelect, StyledInput, StyledButton, StyledLegend } from "./styled";
 
 const Form = ({ calculateResult }) => {
@@ -26,7 +26,7 @@ const Form = ({ calculateResult }) => {
                 <StyledLegend>
                     PLN
                 </StyledLegend>
-                <FullDate />
+                <Clock />
                 <p>
                     <label>
                         <StyledSpan>
