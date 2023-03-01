@@ -1,6 +1,6 @@
-# Simple currency exchange version 1.1
+# Simple currency exchange version 1.2
 
-- [Simple currency exchange version 1.1](#simple-currency-exchange-version-11)
+- [Simple currency exchange version 1.2](#simple-currency-exchange-version-12)
   - [Demo](#demo)
   - [Introduction](#introduction)
   - [Technology used](#technology-used)
@@ -12,7 +12,7 @@
 
 ## Demo
 
-[Website](https://przemek0000.github.io/Module-10b/)
+[Website](https://przemek0000.github.io/Module-11b/)
 
 ## Introduction
 
