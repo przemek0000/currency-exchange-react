@@ -38,3 +38,11 @@ export const StyledButton = styled.button`
     border: 3px solid green;
     background-color: rgba(0, 126, 0, 0.301);
 `;
+
+export const StyledDate = styled.p`
+    font-weight: 100;
+    font-family: monospace;
+    text-align: center;
+    margin: 5px;
+    font-size: 18px;
+`

@@ -1,4 +1,4 @@
-import { StyledDate } from "./styled";
+import { StyledData } from "./styled";
 import useCurrentDate from "./useCurrentDate";
 
 const dateOptions = {
@@ -17,13 +17,13 @@ const Clock = () => {
     const date = useCurrentDate();
 
     return (
-        <StyledDate>
+        <StyledData>
             Dzisiaj jest
             {" "}
             {date.toLocaleDateString(undefined, dateOptions)}
             {" "}
             {date.toLocaleTimeString(undefined, timeOptions)}
-        </StyledDate>
+        </StyledData>
     )
 }
 

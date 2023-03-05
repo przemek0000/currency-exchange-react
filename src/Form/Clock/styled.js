@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledDate = styled.p`
+export const StyledData = styled.p`
     font-family: monospace;
     font-weight: 100;
     text-align: end;
