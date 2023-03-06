@@ -20,9 +20,10 @@ const getData = async () => {
 
 const useNetworkData = () => {
     const [data, setData] = useState(JSON.parse(localStorage.getItem("data")) || {})
-
+    
     useEffect(() => {
         if (!localStorage.getItem("data")) {
+            
             const promiseData = getData();
             setData(promiseData)
         }

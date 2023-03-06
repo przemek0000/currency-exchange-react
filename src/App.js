@@ -8,7 +8,7 @@ function App() {
   const [result, setResult] = useState("$$$")
 
   const changeMoney = (value, currency) => {
-
+    return value * currency;
   }
 
   const calculateResult = (value, currency) => (

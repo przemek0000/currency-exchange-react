@@ -5,7 +5,6 @@ import { StyledFieldset, StyledSpan, StyledSelect, StyledInput, StyledButton, St
 
 const Form = ({ calculateResult }) => {
     const min = 0;
-
     const [value, setValue] = useState('');
     const [currency, setCurrency] = useState("");
     const { base, date, rates } = useNetworkData();
