@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const StyledError = styled.div`
+    text-align: center;
+`
+
 export const StyledLegend = styled.legend`
     margin: 0px;
     border: 4px solid rgb(0, 155, 108);

@@ -16,7 +16,7 @@ const useNetworkData = () => {
             const { base, date, rates } = await response.json();
 
             const updatedData = {
-                connected: false, base, date, rates
+                connected: true, base, date, rates
             };
 
             setData(updatedData);
