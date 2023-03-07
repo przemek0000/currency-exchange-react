@@ -24,7 +24,7 @@ const useNetworkData = () => {
 
         setTimeout(() => {
             getNetworkData();
-        }, 500);
+        }, 1000);
     }, [])
     return data;
 }
