@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 export const StyledError = styled.div`
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(162, 100%, 90%);
+    border: 4px solid rgb(0, 155, 108);
+    color: red;
 `
 
 export const StyledLegend = styled.legend`
