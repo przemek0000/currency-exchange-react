@@ -1,38 +1,32 @@
 import { useState, useEffect } from "react";
 
-const saveLocalStorage = async (data) => {
-    localStorage.setItem("data", JSON.stringify(data))
-}
-
-const getData = async () => {
-    try {
-        const response = await fetch("https://api.exchangerate.host/latest?base=PLN");
-        if (!response.ok) {
-            throw new Error(response.statusText);
-        }
-        const data = await response.json();
-        await saveLocalStorage(data);
-        return data;
-    } catch (error) {
-        console.error("Ups, sprawdź połączenie z internetem lub serwer chwilowo niedostępny :(");
-    }
-}
-
 const useNetworkData = () => {
-    const [data, setData] = useState(JSON.parse(localStorage.getItem("data")) || {})
-    
+    const [data, setData] = useState({
+        connected: false,
+        base: undefined,
+        date: undefined,
+        rates: undefined
+    });
+
     useEffect(() => {
-        if (!localStorage.getItem("data")) {
-            
-            const promiseData = getData();
-            setData(promiseData)
+        const URL = "https://api.exchangerate.host/latest?base=PLN";
+
+        const getNetworkData = async () => {
+            const response = await fetch(URL);
+            const { base, date, rates } = await response.json();
+
+            const updatedData = {
+                connected: false, base, date, rates
+            };
+
+            setData(updatedData);
         }
-        // return () => {
-        //     localStorage.removeItem("data");
-        // }
+
+        setTimeout(() => {
+            getNetworkData();
+        }, 500);
     }, [])
-    const {base, date, rates} = data;
-    return {base, date, rates}
+    return data;
 }
 
 export default useNetworkData;

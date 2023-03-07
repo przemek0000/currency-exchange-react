@@ -1,19 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Clock from "./Clock";
 import useNetworkData from "./useNetworkData";
 import { StyledFieldset, StyledSpan, StyledSelect, StyledInput, StyledButton, StyledLegend, StyledDate } from "./styled";
 
 const Form = ({ calculateResult }) => {
     const min = 0;
+
     const [value, setValue] = useState('');
     const [currency, setCurrency] = useState("");
-    const { base, date, rates } = useNetworkData();
-
-    useEffect(() => {
-        setCurrency(rates.USD)
-    }, [rates])
-
-    const currenciesNames = Object.keys(rates);
+    console.log(useNetworkData());
 
     const setMinCurrency = ({ target }) => {
         const value = Math.max(min, Number(target.value))
@@ -29,7 +24,7 @@ const Form = ({ calculateResult }) => {
         <form onSubmit={onFormSubmit}>
             <StyledFieldset>
                 <StyledLegend>
-                    {base}
+                    {/* {base} */}
                 </StyledLegend>
                 <Clock />
                 <p>
@@ -37,16 +32,16 @@ const Form = ({ calculateResult }) => {
                         <StyledSpan>
                             Wybierz walute:
                         </StyledSpan>
-                        <StyledSelect
-                            value={currency}
-                            onChange={({ target }) => setCurrency(target.value)}>
-                            {currenciesNames.map(worldCurrencie => (
-                                <option
-                                    key={worldCurrencie}
-                                    value={rates[worldCurrencie]}>
-                                    {worldCurrencie}
-                                </option>))}
-                        </StyledSelect>
+                        {/* <StyledSelect
+                                value={currency}
+                                onChange={({ target }) => setCurrency(target.value)}>
+                                {Object.keys(rates).map(worldCurrencie => (
+                                    <option
+                                        key={worldCurrencie}
+                                        value={rates[worldCurrencie]}>
+                                        {worldCurrencie}
+                                    </option>))}
+                            </StyledSelect> */}
                     </label>
                 </p>
                 <p>
@@ -69,7 +64,7 @@ const Form = ({ calculateResult }) => {
                     <StyledButton name="button">Przelicz</StyledButton>
                 </p>
                 <StyledDate>
-                    Kurs walut pobrany z https://exchangerate.host/ <br></br>Aktualny dzień: {date}
+                    {/* Kurs walut pobrany z https://exchangerate.host/ <br></br>Aktualny dzień: {date} */}
                 </StyledDate>
             </StyledFieldset>
         </form>
