@@ -10,7 +10,7 @@ const useNetworkData = () => {
     });
 
     useEffect(() => {
-        const URL = "https://api.exchangdate.host/latest?base=PLN";
+        const URL = "https://api.exchangerate.host/latest?base=PLN";
 
         const getNetworkData = async () => {
             try {
@@ -28,6 +28,9 @@ const useNetworkData = () => {
             } catch(error) {
                 console.log(error)
                 console.log("Sprawdź połączenie z internetem, lub serwer chwilowo niedostępny. Proszę spróbować później.")
+
+                const updatedDataError = {...data, error: true}
+                setData(updatedDataError);
             }
         }
 
