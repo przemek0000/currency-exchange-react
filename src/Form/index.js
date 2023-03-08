@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState} from "react";
 import Clock from "./Clock";
 import useNetworkData from "./useNetworkData";
 import { StyledError, StyledFieldset, StyledSpan, StyledSelect, StyledInput, StyledButton, StyledLegend, StyledDate } from "./styled";
@@ -23,11 +23,11 @@ const Form = ({ calculateResult }) => {
     return (
         <form onSubmit={onFormSubmit}>
             {error === true ?
-                <StyledError>
+                <StyledError color="red">
                     Sprawdź połączenie z internetem, lub serwer chwilowo niedostępny. Proszę spróbować później.
                 </StyledError> :
                 connected === false ?
-                    <StyledError>
+                    <StyledError color="black">
                         Pobieranie danych...
                     </StyledError> :
                     <StyledFieldset>
