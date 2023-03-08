@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Module-12/static/css/main.54fab5e5.css",
-    "main.js": "/Module-12/static/js/main.04fd2aec.js",
+    "main.css": "/Module-12/static/css/main.b9f4ac71.css",
+    "main.js": "/Module-12/static/js/main.1e30dd48.js",
     "static/js/787.7d4c8b61.chunk.js": "/Module-12/static/js/787.7d4c8b61.chunk.js",
-    "static/media/atmMachine.png": "/Module-12/static/media/atmMachine.6f4678d1c8737a66db46.png",
+    "static/media/atmMachineCoins.png": "/Module-12/static/media/atmMachineCoins.dec39fdf4f727cb765e1.png",
+    "static/media/atmMachine.png": "/Module-12/static/media/atmMachine.3fc1cf3d60f5fe269045.png",
     "index.html": "/Module-12/index.html",
-    "main.54fab5e5.css.map": "/Module-12/static/css/main.54fab5e5.css.map",
-    "main.04fd2aec.js.map": "/Module-12/static/js/main.04fd2aec.js.map",
+    "main.b9f4ac71.css.map": "/Module-12/static/css/main.b9f4ac71.css.map",
+    "main.1e30dd48.js.map": "/Module-12/static/js/main.1e30dd48.js.map",
     "787.7d4c8b61.chunk.js.map": "/Module-12/static/js/787.7d4c8b61.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54fab5e5.css",
-    "static/js/main.04fd2aec.js"
+    "static/css/main.b9f4ac71.css",
+    "static/js/main.1e30dd48.js"
   ]
 }
