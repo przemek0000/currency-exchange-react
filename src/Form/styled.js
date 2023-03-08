@@ -21,8 +21,9 @@ export const StyledError = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    
     background-color: hsl(162, 100%, 90%);
-    border: 5px solid rgb(0, 155, 108);
+    border: 5px solid ${({color}) => color === "red" ? color : "rgb(0, 155, 108)"};
     border-radius: 10px;
     color: ${({color}) => color};
 `

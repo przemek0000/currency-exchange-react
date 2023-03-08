@@ -5,7 +5,9 @@ export const StyledContainer = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     background-image: url("${background}");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-color: white;
+    background-attachment:fixed;
+
 `;
