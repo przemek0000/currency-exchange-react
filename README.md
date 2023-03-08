@@ -1,6 +1,6 @@
-# Simple currency exchange version 1.2
+# Simple currency exchange version 1.3
 
-- [Simple currency exchange version 1.2](#simple-currency-exchange-version-12)
+- [Simple currency exchange version 1.3](#simple-currency-exchange-version-13)
   - [Demo](#demo)
   - [Introduction](#introduction)
   - [Technology used](#technology-used)
@@ -12,14 +12,13 @@
 
 ## Demo
 
-[Website](https://przemek0000.github.io/Module-11b/)
+[Website](https://przemek0000.github.io/Module-12/)
 
 ## Introduction
 
 ![Introduction](src/atmMachine.png)
 
-Simple currency exchange was created to exchange PLN to foreign currencies (EUR, GBP, USD). To calculate it, was used strict pattern based on value from 21.02.2023. This version
-allow store tasks in memory.
+This new version allow us to get data from server and use it to calculet right value.
 
 ## Technology used
 
@@ -28,7 +27,10 @@ allow store tasks in memory.
 - JAVASCRIPT ES6+
 - BEM CONVENTION
 - REACT.JS
+- FLEX
 - JSX
+- STYLED-COMPONENTS
+- REST API
 
 ## Available Scripts
 

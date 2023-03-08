@@ -10,5 +10,4 @@ export const StyledContainer = styled.div`
     background-repeat: no-repeat;
     background-color: white;
     background-attachment:fixed;
-
 `;

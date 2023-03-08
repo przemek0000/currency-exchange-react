@@ -15,7 +15,7 @@ const useNetworkData = () => {
         const getNetworkData = async () => {
             try {
                 const response = await fetch(URL);
-                if(!response.ok) {
+                if (!response.ok) {
                     throw new Error(response.statusText);
                 }
                 const { base, date, rates } = await response.json();
@@ -25,11 +25,11 @@ const useNetworkData = () => {
                 };
 
                 setData(updatedData);
-            } catch(error) {
+            } catch (error) {
                 console.log(error)
                 console.log("Sprawdź połączenie z internetem, lub serwer chwilowo niedostępny. Proszę spróbować później.")
 
-                const updatedDataError = {...data, error: true}
+                const updatedDataError = { ...data, error: true }
                 setData(updatedDataError);
             }
         }

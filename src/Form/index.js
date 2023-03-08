@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import Clock from "./Clock";
 import useNetworkData from "./useNetworkData";
 import { StyledError, StyledFieldset, StyledSpan, StyledSelect, StyledInput, StyledButton, StyledLegend, StyledDate } from "./styled";
