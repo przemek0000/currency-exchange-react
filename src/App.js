@@ -7,12 +7,12 @@ import { useState } from "react";
 function App() {
   const [result, setResult] = useState("$$$")
 
-  const changeMoney = (value, currency) => {
-    return value * currency;
+  const changeMoney = (value, currency, name) => {
+    return (value * currency).toFixed(2) + " " + name;
   }
 
-  const calculateResult = (value, currency) => (
-    setResult(changeMoney(value, currency))
+  const calculateResult = (value, currency, name) => (
+    setResult(changeMoney(value, currency, name))
   )
 
   return (
