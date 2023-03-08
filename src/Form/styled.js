@@ -45,20 +45,20 @@ export const StyledFieldset = styled.fieldset`
 
 export const StyledSpan = styled.span`
     animation: ${insideFormAnimation} 0.5s cubic-bezier(1, 0, 0.73, 0.72);
-    width: 210px;
+    width: 280px;
     display: inline-block;
 `;
 
 export const StyledSelect = styled.select`
     animation: ${insideFormAnimation} 0.5s cubic-bezier(1, 0, 0.73, 0.72);
-    width: 300px;
+    width: 380px;
     padding: 2px;
     border-radius: 10px;
 `;
 
 export const StyledInput = styled.input`
     animation: ${insideFormAnimation} 0.5s cubic-bezier(1, 0, 0.73, 0.72);
-    width: 300px;
+    width: 380px;
     border-radius: 10px;
     padding: 5px;
 `;

@@ -53,7 +53,7 @@ const Form = ({ calculateResult }) => {
                         <p>
                             <label>
                                 <StyledSpan>
-                                    Wprowadź wartość:
+                                    Wprowadź wartość w {base}:
                                 </StyledSpan>
                                 <StyledInput
                                     name="input"

@@ -1,13 +1,20 @@
 .result {
     text-align: center;
-    margin: 0px;
-    padding-top: 90px;
-    padding-bottom: 280px;
+    padding-top: 100px;
+    padding-bottom: 200px;
     color: rgb(0, 22, 219);
     background-image: url(./atmMachine.png);
     background-position: center;
+    background-position-y: -220px ;
     background-repeat: no-repeat;
     background-color: white;
+    background-blend-mode: multiply;
+    transition: 0.3s ease-in-out; 
+    min-height: 530px;
+}
+
+.result:hover {
+    background-image: url(./atmMachineCoins.png);
 }
 
 .resultArea {
