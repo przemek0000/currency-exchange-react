@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+const URL = "https://api.exchangerate.host/latest?base=PLN";
+
 const useNetworkData = () => {
     const [data, setData] = useState({
         connected: false,
@@ -10,7 +12,6 @@ const useNetworkData = () => {
     });
 
     useEffect(() => {
-        const URL = "https://api.exchangerate.host/latest?base=PLN";
 
         const getNetworkData = async () => {
             try {
@@ -19,18 +20,13 @@ const useNetworkData = () => {
                     throw new Error(response.statusText);
                 }
                 const { base, date, rates } = await response.json();
-
-                const updatedData = {
-                    connected: true, error: false, base, date, rates
-                };
-
-                setData(updatedData);
+ 
+                setData({connected: true, error: false, base, date, rates});
             } catch (error) {
                 console.log(error)
                 console.log("Sprawdź połączenie z internetem, lub serwer chwilowo niedostępny. Proszę spróbować później.")
 
-                const updatedDataError = { ...data, error: true }
-                setData(updatedDataError);
+                setData(prevData => prevData = {...prevData, error: true});
             }
         }
 
