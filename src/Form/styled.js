@@ -51,14 +51,16 @@ export const StyledSpan = styled.span`
 
 export const StyledSelect = styled.select`
     animation: ${insideFormAnimation} 0.5s cubic-bezier(1, 0, 0.73, 0.72);
-    width: 380px;
+    max-width: 380px;
+    min-width: 290px;
     padding: 2px;
     border-radius: 10px;
 `;
 
 export const StyledInput = styled.input`
     animation: ${insideFormAnimation} 0.5s cubic-bezier(1, 0, 0.73, 0.72);
-    width: 380px;
+    max-width: 380px;
+    min-width: 290px;
     border-radius: 10px;
     padding: 5px;
 `;
