@@ -23,7 +23,7 @@ function App() {
         <textarea className="resultArea"
           disabled
           cols={16}
-          rows={2}
+          rows={1}
           value={result}
           onChange={(event) => setResult(event.target.value)}
         />
