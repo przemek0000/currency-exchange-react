@@ -8,7 +8,7 @@ const Form = ({ calculateResult }) => {
 
     const [value, setValue] = useState('');
     const [currency, setCurrency] = useState("USD");
-    const { connected, error, base, date, rates } = useNetworkData();
+    const { status, base, date, rates } = useNetworkData();
 
     const setMinCurrency = ({ target }) => {
         const value = Math.max(min, Number(target.value))
@@ -22,11 +22,11 @@ const Form = ({ calculateResult }) => {
 
     return (
         <form onSubmit={onFormSubmit}>
-            {error === true ?
+            {status === "error" ?
                 <StyledError color="red">
                     Sprawdź połączenie z internetem, lub serwer chwilowo niedostępny. Proszę spróbować później.
                 </StyledError> :
-                connected === false ?
+                status === "loading" ?
                     <StyledError color="black">
                         Pobieranie danych...
                     </StyledError> :

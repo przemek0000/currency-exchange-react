@@ -4,8 +4,7 @@ const URL = "https://api.exchangerate.host/latest?base=PLN";
 
 const useNetworkData = () => {
     const [data, setData] = useState({
-        connected: false,
-        error: false,
+        status: "loading",
         base: undefined,
         date: undefined,
         rates: undefined
@@ -21,12 +20,12 @@ const useNetworkData = () => {
                 }
                 const { base, date, rates } = await response.json();
  
-                setData({connected: true, error: false, base, date, rates});
+                setData({status: "success", base, date, rates});
             } catch (error) {
                 console.log(error)
                 console.log("Sprawdź połączenie z internetem, lub serwer chwilowo niedostępny. Proszę spróbować później.")
 
-                setData(prevData => prevData = {...prevData, error: true});
+                setData(prevData => prevData = {...prevData, status: "error"});
             }
         }
 
