@@ -1,8 +1,8 @@
 {
-  "name": "module-12",
+  "name": "currency-exchange-react",
   "version": "0.3.0",
   "private": true,
-  "homepage": "https://przemek0000.github.io/Module-12/",
+  "homepage": "https://przemek0000.github.io/currency-exchange-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

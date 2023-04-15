@@ -12,7 +12,7 @@
 
 ## Demo
 
-[Website](https://przemek0000.github.io/Module-12/)
+[Website](https://przemek0000.github.io/currency-exchange-react/)
 
 ## Introduction
 
