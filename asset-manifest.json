@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Module-12/static/css/main.b9f4ac71.css",
-    "main.js": "/Module-12/static/js/main.03e99686.js",
-    "static/js/787.7d4c8b61.chunk.js": "/Module-12/static/js/787.7d4c8b61.chunk.js",
-    "static/media/atmMachineCoins.png": "/Module-12/static/media/atmMachineCoins.dec39fdf4f727cb765e1.png",
-    "static/media/atmMachine.png": "/Module-12/static/media/atmMachine.3fc1cf3d60f5fe269045.png",
-    "index.html": "/Module-12/index.html",
-    "main.b9f4ac71.css.map": "/Module-12/static/css/main.b9f4ac71.css.map",
-    "main.03e99686.js.map": "/Module-12/static/js/main.03e99686.js.map",
-    "787.7d4c8b61.chunk.js.map": "/Module-12/static/js/787.7d4c8b61.chunk.js.map"
+    "main.css": "/currency-exchange-react/static/css/main.c2295dc6.css",
+    "main.js": "/currency-exchange-react/static/js/main.3dabb2d5.js",
+    "static/js/787.d4029fa7.chunk.js": "/currency-exchange-react/static/js/787.d4029fa7.chunk.js",
+    "static/media/atmMachineCoins.png": "/currency-exchange-react/static/media/atmMachineCoins.dec39fdf4f727cb765e1.png",
+    "static/media/atmMachine.png": "/currency-exchange-react/static/media/atmMachine.3fc1cf3d60f5fe269045.png",
+    "index.html": "/currency-exchange-react/index.html",
+    "main.c2295dc6.css.map": "/currency-exchange-react/static/css/main.c2295dc6.css.map",
+    "main.3dabb2d5.js.map": "/currency-exchange-react/static/js/main.3dabb2d5.js.map",
+    "787.d4029fa7.chunk.js.map": "/currency-exchange-react/static/js/787.d4029fa7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9f4ac71.css",
-    "static/js/main.03e99686.js"
+    "static/css/main.c2295dc6.css",
+    "static/js/main.3dabb2d5.js"
   ]
 }
